@@ -69,7 +69,7 @@ const ContactForm = () => {
                     Error submitting form. Please try again later.
                 </Alert>
             )}
-            <form onSubmit={handleSubmit} action='https://formbold.com/s/oyDZA' method='POST' encType="multipart/form-data">
+            <form onSubmit={handleSubmit} action='formSubmissionUrl' method='POST' encType="multipart/form-data">
                 <div className="mb-3">
                     <label htmlFor="name" className="form-label">Name</label>
                     <input type="text" className="form-control" id="name" name="name" value={formData.name} onChange={handleChange} required />
